@@ -14,11 +14,11 @@ import ckan.logic.schema as schema_
 from ckanext.exat.model.exat_info import get_exat_info
 from ckanext.exat.model.exat_data_consent import get_consent_by_user
 from ckanext.thai_gdc import helpers as thai_gdc_h
-from ckanext.thai_gdc.model.opend import OpendModel
+# from ckanext.thai_gdc.model.opend import OpendModel
 
 
 log = logging.getLogger(__name__)
-opend_model = OpendModel()
+# opend_model = OpendModel()
 
 
 def ext_client():
@@ -276,7 +276,7 @@ def top_view_datasets():
     return popular_datasets
 
 
-def top_download_resources():
-    top_resources = opend_model.get_resource_download_top(5)
+# def top_download_resources():
+#     top_resources = opend_model.get_resource_download_top(5)
 
-    return top_resources
+#     return top_resources

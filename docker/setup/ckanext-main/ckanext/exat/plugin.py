@@ -64,8 +64,8 @@ class ExatPlugin(plugins.SingletonPlugin, DefaultTranslation):
             'exat_is_personnel': exh.is_personnel,
             'exat_data_policy_info': exh.data_policy_info,
             'exat_show_statistic_on_main_page': exh.show_statistic_on_main_page,
-            'exat_top_view_datasets': exh.top_view_datasets,
-            'exat_top_download_resources': exh.top_download_resources
+            'exat_top_view_datasets': exh.top_view_datasets
+            # 'exat_top_download_resources': exh.top_download_resources
         }
 
     # IAuthenticator
