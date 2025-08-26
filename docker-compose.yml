@@ -1,7 +1,6 @@
 version: "3"
 
 services:
-
   nginx:
     container_name: nginx${PROJECT_NUMBER}
     restart: unless-stopped
@@ -14,7 +13,7 @@ services:
       - "0.0.0.0:${NGINX_PORT}:80"
     environment:
       - TZ=${TZ}
-    
+
   ckan:
     container_name: ckan${PROJECT_NUMBER}
     restart: unless-stopped
@@ -54,8 +53,16 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER:-ckan}", "-d", "${POSTGRES_DB:-ckan}"]
-     
+      test:
+        [
+          "CMD",
+          "pg_isready",
+          "-U",
+          "${POSTGRES_USER:-ckan}",
+          "-d",
+          "${POSTGRES_DB:-ckan}",
+        ]
+
   solr:
     container_name: solr${PROJECT_NUMBER}
     image: ckan/ckan-solr:2.10-solr8
