@@ -1,0 +1,4 @@
+exat_main_css:
+  filters: cssrewrite
+  output: ckanext-exat/%(version)s_exat_main.css
+  contents: css/exat_main.css

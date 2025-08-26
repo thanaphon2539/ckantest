@@ -1,0 +1,21 @@
+{% ckan_extends %}
+
+{% block header_account_notlogged %}
+<li>{% link_for _('Log in'), named_route='exat.login' %}</li>
+{% endblock %}
+
+
+{% block header_logo %}
+    {% if g.site_logo %}
+        <!-- Test Logo -->
+        <a class="logo" href="{{ h.url_for('home.index') }}"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
+    {% else %}
+        <!-- Test No -->
+        <h1>
+            <a href="{{ h.url_for('home.index') }}">{{ g.site_title }}</a>
+        </h1>
+        {% if g.site_description %}
+            <h2>{{ g.site_description }}</h2>
+        {% endif %} 
+    {% endif %} 
+{% endblock %}

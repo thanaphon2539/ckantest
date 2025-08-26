@@ -1,0 +1,42 @@
+{% extends "admin/base.html" %}
+{% import 'macros/form.html' as form %}
+
+{% block primary_content_inner %}
+<form method='post' action="" id="admin-config-form" enctype="multipart/form-data">
+
+    {{ form.markdown('data_policy_text',
+    label=_('Data Policy'),
+    id='field-data-policy-text',
+    is_required=True,
+    value=data.data_policy_text,
+    error=errors.data_policy_text,
+    placeholder=_('Data Policy')) }}
+
+    {{ form.select('data_policy_show',
+    label=_('Show Data Policy'),
+    id='field-data-policy-showc',
+    options=[{'value':'True', 'text': _('Show')},{'value': 'False', 'text': _('Hide')}],
+    selected=data.data_policy_show,
+    error=errors.data_policy_show) }}
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary" >{{ _('Update Config') }}</button>
+    </div>
+</form>
+{% endblock %}
+
+{% block secondary_content %}
+<div class="module module-narrow module-shallow">
+    <h2 class="module-heading">
+        <i class="fa fa-info-circle"></i>
+        {{ _('Data Policy') }}
+    </h2>
+    <div class="module-content">
+        {% block admin_form_help %}
+        {% trans %}
+        <p></p>
+        {% endtrans %}
+        {% endblock %}
+    </div>
+</div>
+{% endblock %}

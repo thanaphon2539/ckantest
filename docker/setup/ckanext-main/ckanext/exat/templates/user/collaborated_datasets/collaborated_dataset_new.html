@@ -1,0 +1,33 @@
+{% extends "user/read_base.html" %}
+{% import 'macros/form.html' as form %}
+
+{% block primary_content_inner %}
+    {% link_for _('Back to Collaborated Datasets'), named_route='exat.collaborated_datasets', id=user_dict.name, class_='btn btn-default pull-right', icon='arrow-left' %}
+    <h1 class="page-heading">
+        {% block page_heading %}{{ _('Add Datasets')  }}{% endblock %}
+    </h1>
+    {% block form %}
+    <form class="dataset-form add-member-form" method='post'>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group control-medium">
+                    <label class="control-label" for="dataset">
+                        {{ _('Existing Dataset') }}
+                    </label>
+                    <div class="controls">
+                        <input id="dataset" type="text" name="dataset" placeholder="{{ _('Dataset') }}"
+                            value="" class="control-medium" data-module="autocomplete"
+                            data-module-source="/api/2/util/dataset/autocomplete?incomplete=?">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button class="btn btn-primary" type="submit" name="submit" >
+                {{ _('Add Dataset') }}
+            </button>
+        </div>
+    </form>
+    {% endblock %}
+{% endblock %}

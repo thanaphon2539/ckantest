@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        exat=ckanext.exat.plugin:ExatPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    

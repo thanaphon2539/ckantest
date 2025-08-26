@@ -1,0 +1,240 @@
+a {
+    color: #2355ce;
+}
+
+.account-masthead {
+    background-color: #2355ce;
+}
+
+.masthead .navigation .nav-pills li.active a {
+    background-color: #153581;
+}
+
+.masthead .btn-navbar-btn[disabled] {
+    background-color: #2355ce;
+}
+
+.masthead .navigation .nav-pills li a:hover,
+.masthead .navigation .nav-pills li a:focus,
+.site-footer .navigation .nav-pills li.active a {
+    background-color: #153581;
+}
+
+.account-masthead .account ul li {
+    display: block;
+    float: left;
+    border-left: 1px solid #2355ce;
+}
+
+.account-masthead .account ul li a {
+    color: #ffffff;
+  }
+
+.account-masthead .account ul li a:hover {
+    background-color: #153581;
+  }
+
+.site-footer .btn-navbar-btn[disabled] {
+    background-color: #2355ce;
+}
+
+.homepage .module-search .tags {
+    background-color: #2355ce;
+}
+
+.site-footer {
+    background-color: #2355ce;
+}
+
+.nav-pills>li>a {
+    background-color: #2355ce;
+}
+
+.navbar-toggle {
+    background-color: #153581;
+}
+
+a.tag:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #153581;
+    border: 1px solid #2355ce;
+    -webkit-box-shadow: inset 0 1px 0 #2355ce;
+    box-shadow: inset 0 1px 0 #2355ce;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2355ce;
+    border-color: #020607;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: #153581;
+    border-color: #020607;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #153581;
+    border-color: #020607;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    background-color: #164959;
+    border-color: #0f323c;
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open>.dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open>.dropdown-toggle.btn-primary.focus {
+    color: #fff;
+    background-color: #0f323c;
+    border-color: #020607;
+}
+
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+    background-color: #206b82;
+    border-color: #1b5a6e;
+}
+
+.btn-primary .badge {
+    color: #206b82;
+    background-color: #fff;
+}
+
+ul.hierarchy-tree-top li a, ul.hierarchy-tree li a {
+    color: #2355ce !important;
+}
+
+.nav-item.active > a, .nav-aside li.active a {
+    background-color: #2355ce !important;
+}
+
+.nav-item.active > a:before, .nav-aside li.active a:before {
+    border-left-color: #2355ce;
+}
+
+.stages li.active .highlight {
+    background: #779cf3;
+}
+
+.stages li.active:before {
+    color: #779cf3;
+}
+
+.exat_data_consent_mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.exat_data_censent_box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* white background */
+    z-index: 10000;
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+    max-height: 400px;
+    padding: 10px;
+}
+
+.exat_data_content_text {
+    position: relative;
+    overflow-y: scroll;
+    border: 1px solid #020607;
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 10px;
+}
+
+.exat_data_consent_content {
+    color: #020607;
+}
+.exat_data_content_action {
+    margin-top: 10px;
+    height: 50px;
+}
+
+.textHeadBorderMiddle {
+    font-family: 'KanitLight';
+    text-align: center;
+    color: #070747;
+    font-size: 28px;
+    border-bottom: 2px solid #636363;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.textHeadBorderMiddle > span {
+    background-color: #f5f5f5;
+    padding: 0 10px;
+}
+
+.mrT15 {
+    margin-top: 15px;
+}
+
+.mrT10 {
+    margin-top: 10px;
+}
+
+.stat-table {
+    margin-bottom: 0px !important;
+}
+
+.table-responsive {
+    border: 1px solid #E5E5E5;
+}
+
+.table-responsive table {
+    width: 100%;
+}
+
+.theadLight {
+    background-color: #E5E5E5;
+    color: #070747;
+    font-size: 16px;
+}
+
+.theadLight > tr > th {
+    border-bottom: none !important;
+    margin: 3px !important;
+}
+
+.tbodyStatic > tr > td > a {
+    color: #2B2B2B;
+}
+
+.tbodyStatic > tr > td {
+    vertical-align: middle !important;
+    margin: 3px !important;
+    white-space: nowrap;
+    border-top: none !important;
+}

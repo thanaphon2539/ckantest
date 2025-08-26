@@ -1,0 +1,18 @@
+{% ckan_extends %}
+
+{% block basic_fields %}
+    {% set attrs = {'class': 'form-control'} %}
+    {{ form.input('name', label=_('Organization Code'), id='field-url', placeholder=_('Organization Code'), value=data.name, error=errors.name, classes=['control-full'], attrs=attrs, is_required=true) }}
+
+    {% set attrs = {'class': 'form-control'} %}
+    {{ form.input('title', label=_('Name'), id='field-name', placeholder=_('My Organization'), value=data.title, error=errors.title, classes=['control-full'], attrs=attrs) }}
+
+    {{ form.markdown('description', label=_('Description'), id='field-description', placeholder=_('A little information about my organization...'), value=data.description, error=errors.description) }}
+
+    {% set is_upload = data.image_url and not data.image_url.startswith('http') %}
+    {% set is_url = data.image_url and data.image_url.startswith('http') %}
+
+    {{ form.image_upload(data, errors, is_upload_enabled=h.uploads_enabled(), is_url=is_url, is_upload=is_upload) }}
+
+    {% snippet 'scheming/form_snippets/org_hierarchy.html', data=data %}
+{% endblock %}

@@ -1,0 +1,122 @@
+# Thai translations for ckanext-exat.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the ckanext-exat
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-exat 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-06-07 13:25+0000\n"
+"PO-Revision-Date: 2023-06-07 13:29+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: th\n"
+"Language-Team: th <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+msgid "Directory Service"
+msgstr "ระบบบริหารจัดการบัญชีข้อมูล"
+
+msgid "EXPRESSWAY AUTHORITY OF THAILAND (EXAT)"
+msgstr "การทางพิเศษแห่งประเทศไทย (กทพ.)"
+
+msgid "Popular tags"
+msgstr "แท็คยอดนิยม"
+
+msgid "Log in (EXAT)"
+msgstr "เข้าสู่ระบบ (บุคลากร)"
+
+msgid "Guest"
+msgstr "สำหรับบุคคลทั่วไป"
+
+msgid "Loig page for guest."
+msgstr "ไปที่หน้าเข้าสู่ระบบสำหรับบุคคลทั่วไป"
+
+msgid "Log in (Guest)"
+msgstr "เข้าสู่ระบบ (บุคคลทั่วไป)"
+
+msgid "Employee ID"
+msgstr "รหัสพนักงาน"
+
+msgid "Employee ID"
+msgstr "รหัสพนักงาน"
+
+msgid "Personnel"
+msgstr "สำหรับบุคลากร"
+
+msgid "Loig page for EXAT personnel."
+msgstr "ไปที่หน้าเข้าสู่ระบบสำหรับบุคลากร"
+
+msgid "Organization Code"
+msgstr "รหัสองค์กร"
+
+msgid "New Password"
+msgstr "รหัสผ่านใหม่"
+
+msgid "Confirm New Password"
+msgstr "ยืนยันรหัสผ่านใหม่"
+
+msgid "Password Expired"
+msgstr "รหัสผ่านหมดอายุ"
+
+msgid "Change Password"
+msgstr "เปลี่ยนรหัสผ่าน"
+
+msgid "No problem, use our password form to change it."
+msgstr "กรอกฟอร์มสำหรับเปลี่ยนรหัสผ่านใหม่"
+
+msgid "Data Policy"
+msgstr "เงื่อนไขการเข้าถึงข้อมูล"
+
+msgid "Show Data Policy"
+msgstr "แสดงเงื่อนไขการเข้าถึงข้อมูล"
+
+msgid "Accept"
+msgstr "ยอมรับ"
+
+msgid "User Created Datasets"
+msgstr "ชุดข้อมูลที่ผู้ใช้สร้าง"
+
+msgid "Collaborated Datasets"
+msgstr "สิทธิ์การเข้าถึงชุดข้อมูล"
+
+msgid "Add Datasets"
+msgstr "เพิ่มชุดข้อมูล"
+
+msgid "Existing Dataset"
+msgstr "ชุดข้อมูลที่มีอยู่แล้ว "
+
+msgid "Popular Datasets"
+msgstr "ชุดข้อมูลตามลำดับการเข้าชม"
+
+msgid "Daily Views Datasets"
+msgstr "จำนวนผู้เข้าชมชุดข้อมูลรายวัน"
+
+msgid "Daily Downloads Resources"
+msgstr "จำนวนการดาวน์โหลดข้อมูลรายวัน"
+
+msgid "Recent Views"
+msgstr "ผู้เข้าชมสะสม"
+
+msgid "Daily Views"
+msgstr "ผู้เข้าชมรายวัน"
+
+msgid "Daily Downloads"
+msgstr "ดาวน์โหลดรายวัน"
+
+msgid "Recent Downloads"
+msgstr "ดาวน์โหลดสะสม"
+
+msgid "Add User"
+msgstr "เพิ่มผู้ใช้งาน"
+
+msgid "Add User (Personnel)"
+msgstr "เพิ่มผู้ใช้งาน (บุคลากร)"
+
+msgid "{actor} signed up"
+msgstr "{actor} ลงทะเบียนเข้าใช้ระบบ"

@@ -1,0 +1,20 @@
+{% extends "page.html" %}
+{% import 'macros/form.html' as form %}
+
+{% block primary %}
+<article class="module" role="main">
+    <div class="module-content">
+        {{ h.render_markdown(data_policy_text) }}
+    </div>
+    <div class="module-content">
+        <form method='post' action="/exat/data-policy/accept">
+            {{ form.hidden('redirect_path', value=redirect_path) }}
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary" >{{ _('Accept') }}</button>
+            </div>
+        </form>
+    </div>
+</article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

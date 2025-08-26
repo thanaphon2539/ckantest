@@ -1,0 +1,16 @@
+{% ckan_extends %}
+
+{% block secondary_content %}
+    {{ super() }}
+
+    {% if h.check_access('sysadmin') %}
+    <section class="module module-narrow module-shallow">
+        <h2 class="module-heading">{{ _('Add User') }}</h2>
+        <div class="module-content">
+            <p class="action">
+                <a class="btn btn-default" href="{{ h.url_for('exat.personnel_add') }}">{{ _('Add User (Personnel)') }}</a>
+            </p>
+        </div>
+    </section>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,59 @@
+label[for="field-main-search"]
+{
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.exat-intro {
+    color: #ffffff;
+}
+
+.homepage .stats ul li {
+    float: center;
+    width: 33%;
+  }
+
+.exat-search .module-search {
+    background-color: transparent !important;
+}
+
+.exat-search .search-form {
+    background-color: transparent !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+.exat-search .tags {
+    border-radius: 3px 3px 3px 3px !important;
+    background-color: rgba(192, 192, 192, 0.5) !important;
+}
+
+.exat-search .search-form button {
+    color: #888383;
+    font-size: 20px;
+}
+
+.stats {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stats .stats-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stats .stats-column a {
+    color: #ffffff !important;
+}
+
+.stats .stats-column a i {
+    font-size: 64px;
+}
+

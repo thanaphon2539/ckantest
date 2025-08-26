@@ -1,0 +1,15 @@
+{% ckan_extends %}
+
+{% block secondary_content %}
+    {{ super() }}
+
+    <section class="module module-narrow module-shallow">
+        <h2 class="module-heading">{{ _('Personnel') }}</h2>
+        <div class="module-content">
+            <p>{% trans %}Loig page for EXAT personnel.{% endtrans %}</p>
+            <p class="action">
+                <a class="btn btn-default" href="{{ h.url_for('exat.login') }}">{{ _('Log in (EXAT)') }}</a>
+            </p>
+        </div>
+    </section>
+{% endblock %}

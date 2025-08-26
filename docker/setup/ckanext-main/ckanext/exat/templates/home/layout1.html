@@ -1,0 +1,136 @@
+{% if g.search_background %}
+{% set background = g.search_background %}
+{% else %}
+{% set background = '/exat/images/bg-banner-dim1.jpg' %}
+{% endif %}
+
+<link rel="stylesheet" href="/exat/css/layout1.css" />
+
+<div role="main" class="hero" style="background-image: url('{{ background }}');">
+  <div class="container">
+    <div class="row row1">
+      <div class="col12" style="position: unset;">
+        {% block promoted %}
+          {% set intro = g.site_intro_text %}
+          <div class="module-content">
+            <div class="text-center exat-intro">
+              {% if intro %}
+                {{ h.render_markdown(intro) }}
+              {% else %}
+                <h1 class="page-heading">{{ _("Directory Service") }}</h1>
+                <p>
+                  {% trans %}EXPRESSWAY AUTHORITY OF THAILAND (EXAT){% endtrans %}
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        {% endblock %}
+
+        {% block search %}
+          {% set tags = h.get_facet_items_dict('tags', c.search_facets, limit=3) %}
+          {% set placeholder = _('E.g. environment') %}
+          <div class="exat-search">
+            <div class="module module-search">
+              <form class="module-content search-form site-search" method="get" action="{% url_for 'dataset.search' %}">
+                <div class="search-input form-group search-giant">
+                  <input id="field-main-search" type="text" class="form-control" name="q" value="" autocomplete="off" placeholder="ค้นหาชุดข้อมูล" />
+                  <button type="submit">
+                    <em class="fa fa-search"></em>
+                  </button>
+                </div>
+              </form>
+              <div class="tags">
+                <strong style="font-size: 14px;">{{ _('Popular tags') }}</strong><br />
+                {% for tag in tags %}
+                  <a class="tag" href="{% url_for 'dataset.search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endblock %}
+        <br/>
+        {% block stats %}
+          {% set stats = h.get_site_statistics() %}
+          <div class="stats">
+            <div class="inner stats-row">
+              <div class="stats-column text-center">
+                <a href="{{ h.url_for('dataset.search') }}">
+                  <i class="fa fa-folder" aria-hidden="true"></i><br/><br/>
+                  <strong>{{ h.SI_number_span(stats.dataset_count) }}</strong><br/>
+                  {{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}
+                </a>
+              </div>
+              <div class="stats-column text-center">
+                <a href="{{ h.url_for(controller='organization', action='index') }}">
+                  <i class="fa fa-sitemap" aria-hidden="true"></i><br/><br/>
+                  <strong>{{ h.SI_number_span(stats.organization_count) }}</strong><br/>
+                  {{ _('organization') if stats.organization_count == 1 else _('organizations') }}
+                </a>
+              </div>
+              <div class="stats-column text-center">
+                <a href="{{ h.url_for(controller='group', action='index') }}">
+                  <i class="fa fa-th-large" aria-hidden="true"></i><br/><br/>
+                  <strong>{{ h.SI_number_span(stats.group_count) }}</strong><br/>
+                  {{ _('group') if stats.group_count == 1 else _('groups') }}
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
+<div role="main">
+  <div class="container">
+    <div class="row row2">
+      {% block featured_group %}
+      {% set category_dict = h.scheming_group_schemas() %}
+      {% if category_dict and category_dict.keys()|length %}
+      {% snippet 'home/snippets/multi_groups.html', category_dict=category_dict %}
+      {% else %}
+      {% set stats = h.get_site_statistics() %}
+      {% snippet 'home/snippets/groups.html', stats=stats %}
+      {% endif %}
+      {% endblock %}
+    </div>
+  </div>
+  {% set show_statistic_on_main_page = h.exat_show_statistic_on_main_page() %}
+  {% if show_statistic_on_main_page == 'True' %}
+  {% block featured_statistic %}
+  {% snippet 'home/snippets/statistic.html' %}
+  {% endblock %}
+  {% endif %}
+{% block layout_extra %}
+  {% set event_conf = h.gdc_agency_get_conf_group('EVENT') %}
+  {% if event_conf.EVENT_PUBLIC and event_conf.EVENT_PUBLIC == 'True' %}
+
+      {% if event_conf.EVENT_IMAGE %}
+      <div class="modal fade" id="homeEventModal" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="{{event_conf.EVENT_IMAGE}}" style="width:100%" alt="event popup banner image">
+                  </div>
+                  {% if event_conf.EVENT_URL and event_conf.EVENT_URL != '' %}
+                  <div class="modal-footer">
+                      <a href="{{event_conf.EVENT_URL}}" class="btn btn-success" target="_blank">
+                          {{event_conf.EVENT_TEXT if event_conf.EVENT_TEXT else 'เพิ่มเติม'}}
+                      </a>
+                  </div>
+                  {% endif %}
+              </div>
+          </div>
+      </div>
+      <script>
+          setTimeout(() => {
+              $("#homeEventModal").modal('show');
+          }, 500)
+      </script>
+      {% endif %}
+
+  {% endif %}
+{% endblock %}

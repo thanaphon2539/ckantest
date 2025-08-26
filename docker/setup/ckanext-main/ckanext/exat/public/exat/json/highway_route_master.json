@@ -1,0 +1,128 @@
+[
+    {
+        "ID": "0101",
+        "Name": "พัฒนา–เขตร่วมคลอง",
+        "HighwayID": "01",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "8.9"
+    },
+    {
+        "ID": "0102",
+        "Name": "ชุมทาง–เขตร่วมคลอง",
+        "HighwayID": "01",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "7.9"
+    },
+    {
+        "ID": "0103",
+        "Name": "ปทุมธานี–เขตร่วมคลอง",
+        "HighwayID": "01",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "10.3"
+    },
+    {
+        "ID": "0201",
+        "Name": "สะพาน A (หนองแค-ธนานันทน์)",
+        "HighwayID": "02",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "12.4"
+    },
+    {
+        "ID": "0202",
+        "Name": "สะพาน B (อยุธยา-ชัยนาท)",
+        "HighwayID": "02",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "9.4"
+    },
+    {
+        "ID": "0203",
+        "Name": "สะพาน C (หนองแค-รังสิต)",
+        "HighwayID": "02",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "8"
+    },
+    {
+        "ID": "0204",
+        "Name": "สะพาน D (มหาชัย-ราชพฤกษ์)",
+        "HighwayID": "02",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "8.6"
+    },
+    {
+        "ID": "0301",
+        "Name": "นครินทร์–ตลิ่งชัน",
+        "HighwayID": "03",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "18.7"
+    },
+    {
+        "ID": "0302",
+        "Name": "นครินทร์–หนองเสือ",
+        "HighwayID": "03",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "9.5"
+    },
+    {
+        "ID": "0401",
+        "Name": "ชุมทาง–สะพาน–ชุมทาง",
+        "HighwayID": "04",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "55"
+    },
+    {
+        "ID": "0501",
+        "Name": "ชุมทาง–ชุมทาง–สถาน",
+        "HighwayID": "05",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "32"
+    },
+    {
+        "ID": "0601",
+        "Name": "ชุมทาง–หนองจอก (S1)",
+        "HighwayID": "06",
+        "HighwayName": "กาญจนาภิเษก (S1)",
+        "Distance": "4.7"
+    },
+    {
+        "ID": "0701",
+        "Name": "ชุมทาง–สุวรรณภูมิ",
+        "HighwayID": "07",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "22.5"
+    },
+    {
+        "ID": "0801",
+        "Name": "สะพาน–หนองเสือ–รังสิต",
+        "HighwayID": "08",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "16.7"
+    },
+    {
+        "ID": "0901",
+        "Name": "พิษณุโลก–จอมทอง",
+        "HighwayID": "09",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "82"
+    },
+    {
+        "ID": "0902",
+        "Name": "จอมทอง–พัทลุง",
+        "HighwayID": "09",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "42"
+    },
+    {
+        "ID": "1001",
+        "Name": "ชุมทาง–สะพาน",
+        "HighwayID": "10",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "64"
+    },
+    {
+        "ID": "1101",
+        "Name": "หัวหมาก–พัทยา",
+        "HighwayID": "11",
+        "HighwayName": "กาญจนาภิเษก",
+        "Distance": "28.1"
+    }
+]

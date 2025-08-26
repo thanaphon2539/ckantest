@@ -1,0 +1,14 @@
+# exat-js:
+#   filter: rjsmin
+#   output: ckanext-exat/%(version)s-exat.js
+#   contents:
+#     - js/exat.js
+#   extra:
+#     preload:
+#       - base/main
+
+# exat-css:
+#   filter: cssrewrite
+#   output: ckanext-exat/%(version)s-exat.css
+#   contents:
+#     - css/exat.css
