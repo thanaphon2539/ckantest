@@ -5,7 +5,7 @@ import logging
 import time
 
 import ckan.plugins.toolkit as toolkit
-import ckanext.dga_stats.stats as stats_lib
+import ckanext.opendstats.stats as stats_lib
 import ckanext.exat.stats as exat_stats
 
 log = logging.getLogger(__name__)
